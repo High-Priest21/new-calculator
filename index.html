@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div style="background-color:royalblue" class="col-4 space">
+              <h3>Calculator</h3>
+              <div>
+                  <input type="text" placeholder="enter number here" id="firstnumber">
+                  <input type="text" placeholder="enter 2nd number" id="secondnumber">
+              </div>
+              <div class="space1">
+              <button class="btn btn-info" onclick="document.getElementById('showcase').innerHTML = add();">sum</button>
+              <button class="btn btn-danger" onclick="document.getElementById('showcase').innerHTML = multiply();">multiply</button>
+              <button class="btn btn-success" onclick="document.getElementById('showcase').innerHTML = divide();">divide</button>
+            </div>
+            <div id="showcase"></div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+</html>
